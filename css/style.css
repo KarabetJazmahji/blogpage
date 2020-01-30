@@ -1,0 +1,357 @@
+:root{
+    --primary-color: #00BFFF;
+    --webDevelopment-color: rgba(0, 81, 255, 0.842);
+    --dataSecurity-color: #FFDF01;
+    --dataScience-color: #62BD69;
+    --hover-color: rgb(0, 47, 255);
+    --light-color: #f3f3f3;
+    --max-width: 1100px;
+}
+.py-1{
+    padding: 10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+p{
+    margin: 15px 0;
+}
+.current{
+    background: var(--primary-color);
+}
+span{
+    color: var(--primary-color);
+}
+i{
+    color: grey;
+}
+img{
+    width:100%;
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+.submit-button{
+    border-style: none;
+    width: 70px;
+}
+
+
+.link-design{
+    border-bottom: 3px transparent solid;
+    transition: border-color 0.5s;
+}
+
+#linkscience-design:hover{
+    border-color:  var(--dataScience-color);
+}
+
+#linksecurity-design:hover{
+    border-color:  var(--dataSecurity-color);
+}
+
+#linkdevelopment-design:hover{
+    border-color: var(--webDevelopment-color);
+}
+
+
+/* Navbar */
+.main-navbar{
+    position: sticky;
+    top:0;
+    background: var(--light-color);
+    z-index: 2;
+    max-height: 75px;
+}
+
+.navbar{
+    display: grid;
+    overflow: hidden; 
+    margin: auto;
+    grid-template-columns: 2fr 1fr 1fr;
+    max-width: var(--max-width);
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h1{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.navbar ul{
+    display: grid;
+    grid-template-columns: repeat(2, 75px);
+    justify-self: end;
+}
+
+.navbar ul li{  
+    text-align: center;  
+}
+
+.navbar ul li a{
+    color: #333;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover{
+    opacity: 0.5;
+}
+
+.navbar .logo-container{
+    padding: 30px;
+}
+
+.navbar .logo-container i{
+    padding: 0 10px;
+}
+
+
+/* Main Content */
+.recent-section{
+    display: grid;
+    max-width: var(--max-width);
+    margin: 20px auto;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url('../img/developer.jpeg') no-repeat center center/cover;
+    opacity: 0.8;  
+}
+
+.recent-section .recent-aside{
+    color: #eee;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    z-index: 2;
+    margin-left: 20px;
+}
+
+.recent-section .recent-aside h2{
+    text-align: left;
+}
+
+.link-btn{
+    color: #eee;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    background: var(--webDevelopment-color);
+    cursor: pointer;
+}
+
+.link-btn:hover{
+   opacity: 0.4;
+}
+
+
+.datascience-design{ background: var(--dataScience-color)}
+.security-design{ background: var(--dataSecurity-color)}
+
+
+/* Aricles */
+.articles{
+    background: var(--light-color);
+    display: grid;
+    margin: auto;
+    max-width: var(--max-width);
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+
+.articles .first-article{
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px;
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+.articles .second-article{
+    background: #fff;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.articles .third-article,.articles .fourth-article{
+    background: #fff;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.articles .fifth-article{
+    background: #555;
+    color: #fff;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.articles .sixth-article{
+    background: url('../img/datasience.jpg') no-repeat center center/cover;
+    margin: 20px;
+}
+
+.articles .seventh-article{
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 2 / span 2;
+    margin: 20px;
+      
+}
+
+.articles-heading-webDevelopment{
+    border-bottom: 0.8px var(--webDevelopment-color) solid;
+}
+.articles-heading-dataSecurity{
+    border-bottom: 0.8px var(--dataSecurity-color) solid;
+}
+.articles-heading-dataScience{
+    border-bottom: 0.8px var(--dataScience-color) solid;
+}
+
+  
+
+/* Footer */
+.main-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px auto 30px; 
+    column-gap: 20px;
+    background: #eee;
+    color: #000;
+    opacity: 0.7;
+}
+.footer-logo{
+    padding: 15px;
+}
+
+.footer-message{
+    padding: 0 0 10px 0;
+}
+.footer-message label{
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-message textarea{
+    display: block;
+    margin: 5px 0;
+    height: 60px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.additional-footer{
+    padding: 10px;
+    justify-content: center;
+}
+
+
+.additional-footer ul li i{
+    color:#000;
+    padding: 0 10px;
+}
+
+
+
+.additional-footer ul li{
+    padding: 5px;
+}
+
+.join-footer{
+    display: grid;
+    padding: 5px;
+}
+
+.join-footer a{
+    justify-self: right;
+}
+
+/* About Page */
+.about-main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px auto;
+    max-width: var(--max-width);
+    gap: 10rem;
+}
+
+.about-main .about-aside div:nth-child(2){
+    margin-top: 50px;
+    background: var(--primary-color);
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.about-main .about-aside ul li{
+    line-height: 2rem;
+    border-bottom: 1px dotted black;
+}
+
+.about-main .about-aside ul li i{
+    padding: 5px;
+}
+
+
+.bottom-footer{
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Registration form */
+.reg-form{
+    display: block;
+    margin: 20px auto;
+}
+
+.reg-form h2{
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 0.7px var(--primary-color) dotted;
+}
+
+.reg-form button{
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+}
+
+#container{
+    margin: 50px;
+}
+
+.input-container{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.input-field{
+    width: 90%;
+    cursor: pointer;
+}
+
+.input-field:focus{
+    border: 2px var(--primary-color) solid;
+}
