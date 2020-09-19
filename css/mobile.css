@@ -27,7 +27,6 @@
 /* Main Content */
 .recent-section{
     height: 100vh;
-    background: url('./img/developer.jpeg') no-repeat center center/cover;
 }
 
 /* Aricles */
@@ -50,7 +49,7 @@
 
 
 
-@media(max-width: 600px){
+@media only screen and (max-width: 600px){
     /* Main Content */
     .recent-section{
        display: block;
@@ -117,9 +116,13 @@
     padding: 0;
 }
 
+.reg-form{
+    width: 90%;
 }
 
-@media(max-width: 350px){
+}
+
+@media only screen and (max-width: 350px){
     .about-aside{
         display: grid;
         grid-template-columns: 1fr;
